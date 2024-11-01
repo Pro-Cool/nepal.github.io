@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*/----------------------------------------------------------------------------------------------------------------------------------------------------------------------/*/
+
+/* HOME PAGE/*/
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('images/image_1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#welcome h3{
+    font-size: 38px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+#welcome h1{
+    margin: 30px 0 20px 0;
+    font-size: 58px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+#welcome p{
+    font-size: 33px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+#welcome a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#welcome .btn_1{
+    background: #fff;
+    color: #000;
+    align-items: center;
+}
+
+
+
+.change_content::after{
+    content: " ";
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+.top img{
+    width: 50px;
+    height: 50px;
+    margin-top: 412px;
+    margin-left: 610px;
+    align-items: right;
+    position: fixed;
+    z-index: 1;
+}
+
+
+@keyframes changetext {
+    0%{content:'Jiri';}
+    15%{content:'Pokhara';}
+    30%{content:'Chitwan';}
+    45%{content:'Khaptad';}
+    60%{content:'Lumbini';}
+    75%{content:'Ilam';}
+    90%{content:'Janakpur';}
+    100%{content:'Bhairawa';}
+}
+
+
+/*/----------------------------------------------------------------------------------------------------------------------------------------------------------------------/*/
+
+/* NAV BAR/*/
+
+.logo{
+    font-size: 35px;
+    align-items: center;
+}
+
+.logo a{
+    text-decoration: none;
+    color:white;
+}
+nav{
+    width: 100%;
+    height: 12vh;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    position: fixed;
+    color: white;
+    transition: background-color 0.4s ease-in-out;
+}
+
+nav.scrolled{
+    background-color: #00bfff;
+    opacity: 90%;
+}
+
+nav.scrolled .menu a{
+    color: black;
+}
+
+nav.scrolled .logo a{
+    color: black;
+}
+
+
+nav .logo{
+    width: 20%;
+    text-align: center;
+}
+
+nav .menu{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 10000;
+    padding-right: 30px;
+}
+
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+}
+
+.user img{
+    width: 40px;
+    height: 40px;
+    
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------/*/
+/*/ CONTAINERS/*/
+
+
+#container1{
+    height: 100vh;
+    width: 100%;
+    background-color: #FFBA01;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding-top: 0;
+}
+
+#container2{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    background-attachment: fixed; /*parallax effect/*/
+    margin-bottom: 0px;
+}
+
+#container3{
+    height: 100vh;
+    width: 100%;
+    background: url("images/image_6.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#container4{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*/----------------------------------------------------------------------------------------------------------------------------------------------------------------------/*/
+.footer{
+    width: 100%;
+    height: 15rem;
+    background-color: #34495e;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.name_text{
+    font-size: 28px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.right_text{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 2px;
+
+    
+}
+.border{
+    width: 80px;
+    border-bottom: 2px solid white;
+    margin: 0;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.icon1{
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    position: absolute;
+    margin-left: 44%;
+    margin-top: 3rem;
+    border: 10px solid #b1c9d1;
+}
+
+.icon2{
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    position: absolute;
+    margin-left: 51%;
+    margin-top: 3rem;
+    border: 10px solid #b1c9d1;
+}
+
+
+
+.instagram_icon{
+    text-align: center;
+    justify-content: center;
+    margin-top: 0.6rem;    
+}
+
+.facebook_icon{
+    text-align: center;
+    justify-content: center;
+    margin-top: 0.78rem;
+    margin-right: 1.5px;
+}
+
+
+
+/*/----------------------------------------------------------------------------------------------------------------------------------------------------------------------/*/
+
+#container4 h2{
+    display: block;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 40px;    
+
+}
+
+
+.contact-area-p{
+    margin-bottom:20px;
+    padding-left: 30px;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    
+}
+.contact-area-p_2{
+    padding-left: 600px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.contact-area ul{
+    display: inline-flex;
+    list-style: none;
+    float: left;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/*/
+
+.home_icon{
+    align-items: center;
+    justify-content: center;    
+    margin-left: 40px;
+}
+
+
+.home_address{
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.002em;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-top: 9px;
+
+}
+
+
+.address{
+    padding-left: 90px;
+    width: 300px;
+}
+
+.address_text{
+    font-size: 20px;
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/*/
+
+
+.phone_icon{
+    align-items: center;
+    justify-content: center;    
+    margin-left: 40px;
+}
+
+
+.phone_num{
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.002em;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-top: 9px;
+
+}
+
+.phone{
+    padding-left: 90px;
+}
+
+.phone_number{
+    font-size: 20px;
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/*/
+
+
+.email_icon{
+    align-items: center;
+    justify-content: center;    
+    margin-left: 40px;
+}
+
+
+.email_id{
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.002em;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-top: 9px;
+
+}
+
+
+.email{
+    padding-left: 90px;
+}
+
+.email-id{
+    font-size: 20px;
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/*/
+.contact_border{
+    width: 80px;
+    border-right: 1px solid grey;
+    padding-right: 500px;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/*/
+
+/* ABOUT /*/
+
+#container1 .heading{
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding-top: 7.5%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 200;
+}
+
+.text_bg{
+    margin-left: 15%;
+    margin-top: 85px;
+    background-color: white;
+    height: 550px;
+    width: 1200px;
+    border-radius: 50px;
+}
+
+.text_bg p{
+    text-align: justify;
+    padding-top: 65px;
+    font-size: 30px;
+    padding-left: 55px;
+    padding-right: 55px;
+    font-family: 'Nunito';
+    text-align-last: center;
+
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/*/
+#container3 p{
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 8%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 200;
+}
+
+
+
+.bus_icon{
+    width: 250px;
+    height: 250px;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.service_bg p{
+    color: black;
+    text-decoration: none;
+}
+
+.service_bg{
+    margin-left: 8%;
+    margin-top: 80px;
+    background-color: #f8f8f8;
+    height: 550px;
+    width: 400px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.service_bg:hover{
+    transform: translateY(-2.1rem);
+}
+
+.airline_icon{
+    width: 250px;
+    height: 250px;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.service_bg1 p{
+    color: black;
+    text-decoration: none;
+}
+
+.service_bg1{
+    margin-left: 38%;
+    margin-top: -550px;
+    background-color: #f8f8f8;
+    height: 550px;
+    width: 400px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.service_bg1:hover{
+    transform: translateY(-2.1rem);
+}
+
+.hotel_icon{
+    width: 250px;
+    height: 250px;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.service_bg2 p{
+    color: black;
+    text-decoration: none;
+}
+
+.service_bg2{
+    margin-left: 68%;
+    margin-top: -550px;
+    background-color: #f8f8f8;
+    height: 550px;
+    width: 400px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.service_bg2:hover{
+    transform: translateY(-2.1rem);
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/*/
+
+.slider-wrapper{
+    position: relative;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+
+
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 2.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 1.75;
+    transition: opacity ease 500ms;
+
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/*/
